@@ -1,0 +1,2 @@
+sudachidict-core==20241021
+sudachipy==0.6.9

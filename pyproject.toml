@@ -1,0 +1,10 @@
+[project]
+name = "kanji-to-hiragana"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "sudachidict-core==20241021",
+    "sudachipy==0.6.9",
+]

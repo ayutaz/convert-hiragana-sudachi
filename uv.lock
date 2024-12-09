@@ -1,0 +1,46 @@
+version = 1
+requires-python = ">=3.11"
+
+[[package]]
+name = "kanji-to-hiragana"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "sudachidict-core" },
+    { name = "sudachipy" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "sudachidict-core", specifier = "==20241021" },
+    { name = "sudachipy", specifier = "==0.6.9" },
+]
+
+[[package]]
+name = "sudachidict-core"
+version = "20241021"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sudachipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c0/29/011b71bb5f361ba805f491c123c28496cea1ac334cfb290c77f0a36bc6b2/SudachiDict-core-20241021.tar.gz", hash = "sha256:a9d84946f15e040ebf3943ef2b8f0e169c92fb8cf3ce00395bed2698a892069d", size = 9012 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/29/c6/feb396dc9c03d5c198cc2245024bef7383f844945b3b3af40200682ca804/SudachiDict_core-20241021-py3-none-any.whl", hash = "sha256:c5b61f4b4be5ec76895a51aae051fb8b303a62b3a964f858350edf0d84205378", size = 72063182 },
+]
+
+[[package]]
+name = "sudachipy"
+version = "0.6.9"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/73/65/a389277043901d3a6566d4463c2f96e0a102cc4bb5b59a44c3bd7a947ab7/sudachipy-0.6.9.tar.gz", hash = "sha256:131fc9521f2d538be9d5f276e69efc64a2b38dd6489af5dfe1e7161c3efaebb6", size = 164153 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/95/9d/29608505326b762777c5c8b11c95099b3a86adc5c91ecf17a46691deeff5/SudachiPy-0.6.9-cp311-cp311-macosx_10_12_universal2.whl", hash = "sha256:5a071585b760bee824309922a84646a4b0c2612bc0176a3fe91121500354c730", size = 2998714 },
+    { url = "https://files.pythonhosted.org/packages/73/f3/2a7e7f14c1a7c44fbd457e08b153d504e101a48b487595ff888ac7107315/SudachiPy-0.6.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:32c3010b14855ed0c325d4170f97803a0cb85d0dc04b19b684c08ccd8daea87a", size = 1701471 },
+    { url = "https://files.pythonhosted.org/packages/2a/f0/1fdbd5ae2682c55b0f05c8af73318a97431912312de78165c96f2117799e/SudachiPy-0.6.9-cp311-cp311-win_amd64.whl", hash = "sha256:8bd595bb3809d4c4c262710a8736dd2150fe39b04f48925247e3f6fa3e90f8dd", size = 1369955 },
+    { url = "https://files.pythonhosted.org/packages/b0/ee/532cea9e81ce64637a69158d4327485ce60a4bff928045b6033a97808c59/SudachiPy-0.6.9-cp312-cp312-macosx_10_12_universal2.whl", hash = "sha256:4a9571e93b2be900d26f1d1713b62ae567e3a31d4654ec7d1ac472a16efd017e", size = 2998485 },
+    { url = "https://files.pythonhosted.org/packages/5d/b3/0b8e7fa9747c6122801f174ca0120cf75d940381b5d32630849f1fcca40d/SudachiPy-0.6.9-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:666f2817a9ced479610ebdfc21cbfd0ac13e97fe81e0484b314399d8dfaff90f", size = 1700136 },
+    { url = "https://files.pythonhosted.org/packages/56/69/449697aa51bfeaf56cb58cf6f3b7e4344996d2fcad3bfaa80dd7e18568fc/SudachiPy-0.6.9-cp312-cp312-win_amd64.whl", hash = "sha256:f1355e3a17e68c54aedba4275c8799233792139df2082becc9b4af82f21195ac", size = 1369146 },
+    { url = "https://files.pythonhosted.org/packages/e5/00/790f77cfe05ace70cac154240872de619562d79c08708a7f5605685c5642/SudachiPy-0.6.9-cp313-cp313-macosx_10_12_universal2.whl", hash = "sha256:ddc3620503af8cbefe897a59a802a964b5f0bc41791b313fa3f7d28fd461ddbb", size = 2996517 },
+    { url = "https://files.pythonhosted.org/packages/48/e5/f999d65406ad96b6b637265badcd5a089cff83d391d9e7b2e0b37989d94d/SudachiPy-0.6.9-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c369062289e32e7e11d377c55e3349d73496b84a84fd8bf07ff68ca6b1d1da9c", size = 1699522 },
+    { url = "https://files.pythonhosted.org/packages/a3/2e/1b4abe308ab44cb0ad485a053d67493a56df3c196b9479a8a3a4ccb18f66/SudachiPy-0.6.9-cp313-cp313-win_amd64.whl", hash = "sha256:0494b04d864f7788309975aeca4dc5d7b61b3c3d987d058c71e2bf4ba3a6daca", size = 1369017 },
+]
