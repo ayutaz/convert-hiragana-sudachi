@@ -9,3 +9,13 @@ uv sync
 ```bash
 uv run sudachi-test.py
 ```
+
+or full directonary
+```bash
+uv run sudachipy-full-test.py
+```
+
+# diff between core and full
+```bash
+uv run diff.py
+```
